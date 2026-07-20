@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maven Commands and Information</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .command {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            margin: 10px 0;
+            font-family: monospace;
+            font-size: 1.1em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fafafa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Introduction to Maven</h1>
+        <p>Maven is a powerful build tool used for managing the entire lifecycle of a software project. It automates tasks like compiling source code, managing dependencies, running tests, packaging artifacts, and more.</p>
+        
+        <h2>Maven Commands</h2>
+        <ul>
+            <li>
+                <div class="command">mvn clean</div>
+                <p>Deletes the target directory and any files generated during the build process.</p>
+            </li>
+            <li>
+                <div class="command">mvn compile</div>
+                <p>Compiles the source code of the project.</p>
+            </li>
+            <li>
+                <div class="command">mvn test</div>
+                <p>Runs tests for the project.</p>
+            </li>
+            <li>
+                <div class="command">mvn package</div>
+                <p>Packages the compiled code into a distributable format (e.g., JAR, WAR).</p>
+            </li>
+            <li>
+                <div class="command">mvn install</div>
+                <p>Installs the packaged artifact into the local Maven repository.</p>
+            </li>
+            <li>
+                <div class="command">mvn clean install</div>
+                <p>Combines the clean and install phases, ensuring a clean build and then installing the artifact.</p>
+            </li>
+            <li>
+                <div class="command">mvn clean package</div>
+                <p>Combines the clean and package phases, ensuring a clean build and then packaging the artifact.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
